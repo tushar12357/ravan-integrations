@@ -271,7 +271,7 @@ const IntegrationCard: React.FC<{
 }> = ({ title, subtitle, sections }) => {
   return (
     <motion.div
-      className="bg-[#EAD9A8] p-8 rounded-2xl shadow-2xl mb-12"
+      className="bg-[#F5E8C7] p-8 rounded-2xl shadow-2xl mb-12"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
@@ -304,7 +304,7 @@ const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <div className="min-h-screen bg-[#F5E8C7] font-sans">
+    <div className="min-h-screen bg-transparent font-sans">
       <main className="max-w-5xl mx-auto py-12 px-4">
         <div className="flex space-x-4 mb-8 overflow-x-auto pb-2">
           {integrations.map((integration, index) => (
