@@ -306,7 +306,7 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-transparent font-sans">
       <main className="max-w-5xl mx-auto py-12 px-4">
-        <div className="flex space-x-4 mb-8 overflow-x-auto pb-2">
+        <div className="grid grid-cols-4 gap-4 mb-8 overflow-x-auto pb-2">
           {integrations.map((integration, index) => (
             <button
               key={index}
